@@ -28,7 +28,6 @@ function Home() {
         {/* Menú de navegación */}
         <nav className={`nav-menu ${menuOpen ? "active" : ""}`}>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">Acerca de</NavLink>
           <NavLink to="/contact">Contactos</NavLink>
         </nav>
       </header>
