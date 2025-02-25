@@ -1,0 +1,85 @@
+/* 🔹 Sección de contacto con fondo negro y borde aquamarine */
+.contact-section {
+    background: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 30px 20px;
+    border: 3px solid aquamarine; /* Borde aquamarine */
+    border-radius: 10px;
+    width: calc(100% - 80px); /* Resta 40px de cada lado */
+    box-sizing: border-box;
+    text-align: left;
+    margin: 40px auto; /* Espaciado superior e inferior automático */
+
+}
+
+/* 🔹 Título en blanco */
+.contact-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: aquamarine;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Información de contacto alineada a la izquierda */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo el contenido a la izquierda */
+    gap: 10px;
+}
+
+/* 🔹 Alinear cada elemento a la izquierda */
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea los iconos y texto a la izquierda */
+    gap: 10px;
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+/* 🔹 Estilo de los iconos */
+.icon {
+    font-size: 1.5rem;
+    color: aquamarine; /* Íconos aquamarine */
+}
+
+/* 📏 Responsive: Ajusta en móviles */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-info {
+        align-items: flex-start; /* Mantiene alineado a la izquierda */
+    }
+
+    .contact-info p {
+        font-size: 1.1rem;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+}
+/* Sección de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: left; /* Centra los iconos */
+    gap: 20px; /* Espaciado entre los iconos */
+    margin-top: 15px;
+}
+
+/* Iconos de redes sociales */
+.social-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white; /* Color blanco */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover en los iconos */
+.social-link:hover {
+    transform: scale(1.2);
+    color: aquamarine; /* Cambia de color al pasar el cursor */
+}

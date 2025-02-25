@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaCalendarAlt, FaTrophy, FaUsers } from "react-icons/fa";
+import { FaCalendarAlt, FaTrophy, FaUsers,FaInstagram, FaTiktok } from "react-icons/fa";
 import "./Home.css"; 
 import logo from "../imagenes/logoj.png"; 
-import homeImage from "../imagenes/imagenhome.png"; 
+import homeImage from "../imagenes/jura.jpg"; 
+import homeImage1 from "../imagenes/home.png"; 
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,8 +44,8 @@ function Home() {
             </h1>
             <p className="home-description">
               Equipo de robótica FLL apasionado por la innovación y la tecnología, 
-              apoyados por el Colegio San Francisco de Asís de Nemocón, 
-              la Alcaldía de Nemocón y la Mina de Sal de Nemocón.
+              apoyados por el Colegio San Francisco de Asís de Nemocón y 
+              la Alcaldía de Nemocón.
             </p>
           </div>
           <div className="home-image">
@@ -73,6 +74,22 @@ function Home() {
               <span className="stat-number">2+</span>
               <span className="stat-label">Proyectos</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 🔽 Nueva Sección - Imagen Izquierda, Texto Derecha */}
+      <section className="home2-main">
+        <div className="home2-content">
+          <div className="home2-image">
+            <img src={homeImage1} alt="Proyecto Fenixpollution" />
+          </div>
+          <div className="home2-text">
+            <p className="home2-description">
+              Nuestro compromiso con el medio ambiente nos llevó a desarrollar proyectos como 
+              <strong> Fenixpollution</strong>, enfocado en convertir la contaminación de carbono en pintura texturizada. 
+              Ahora, con <strong>Atlantix 3.0</strong>, seguimos explorando nuevas ideas y desafíos.
+            </p>
           </div>
         </div>
       </section>
@@ -109,6 +126,8 @@ function Home() {
         </a>
 
       </section>
+        
+
       <footer className="footer">
         <hr className="footer-line" />
         <div className="footer-content">
