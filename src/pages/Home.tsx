@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaCalendarAlt, FaTrophy, FaUsers,FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaCalendarAlt, FaTrophy, FaUsers } from "react-icons/fa";
 import "./Home.css"; 
 import logo from "../imagenes/logoj.png"; 
 import homeImage from "../imagenes/jura.jpg"; 
