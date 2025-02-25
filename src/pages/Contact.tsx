@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Contact.css"
 import { NavLink } from "react-router-dom";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaInstagram, FaTiktok } from "react-icons/fa";
 import logo from "../imagenes/logoj.png";
